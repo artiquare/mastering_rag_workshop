@@ -1,6 +1,6 @@
-# Contributing to Insurance Advisor Agent(s)
+# Contributing to Code
 
-We are excited that you are interested in contributing to the Insurance Advisor Agent(s) project! Your contributions are invaluable to us. Please follow the guidelines below to contribute.
+We are excited that you are interested in contributing to the this project! Your contributions are invaluable to us. Please follow the guidelines below to contribute.
 
 ## How to Contribute
 
@@ -11,7 +11,7 @@ If you find any bugs or have any suggestions for improvements, please report the
 1. **Fork the Repository**: Click the "Fork" button on the top right of the repository page.
 2. **Clone Your Fork**:
    ```sh
-   git clone https://github.com/your-username/insurance-advisor-agent.git
+   git clone https://github.com/your-username/mastering_rag_workshop.git
    cd insurance-advisor-agent
 
 3. **Create a Branch**:
