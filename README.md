@@ -16,35 +16,59 @@ This repository contains the code and resources used in the workshop for buildin
 
 ---
 
-## 🔧 **Setup Instructions**
 
-1. **Clone the Repository**:
-   ```bash
-   git clone <repo_url>
-   cd <repo_name>
-   ```
+### 🛠️ Setup Instructions
 
-2. **Install Dependencies**:
-   Use the provided `requirements.txt` file to install the necessary Python packages.
+1. **Install Dependencies**
+
+   Install the required Python packages using `pip`:
+
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Preprocess the Data**:
-   Run `chunking_embedding.py` to chunk the Markdown file and embed it into Chroma and BM25:
+2. **Prepare the Dataset**
+
+   The dataset (PDF) is already processed into a markdown file and located in the `docs/` folder.
+
+3. **Embed the Data**
+
+   Run the `chunking_embedding.py` script to chunk and embed the markdown file into Chroma and BM25 stores:
+
    ```bash
    python chunking_embedding.py
    ```
 
-4. **Run the GUIs**:
-   Each RAG chain has its own Gradio interface. Launch a specific chain by running its corresponding script, e.g., for the basic chain:
+4. **API Key Setup**
+
+   To run the application, you need to set up your Hugging Face API key:
+
+   - Copy the `example.env` file to `.env`:
+
+     ```bash
+     cp example.env .env
+     ```
+
+   - Open the `.env` file and replace `<YOUR_HUGGINGFACE_API_KEY>` with your Hugging Face API key:
+
+     ```env
+     HF_API_TOKEN=<YOUR_HUGGINGFACE_API_KEY>
+     ```
+
+   - Save the file.
+
+5. **Run the Applications**
+
+   Run any of the GUI applications for side-by-side comparisons of the different chains. Each app will run on a different port:
+
    ```bash
-   python app_gui_basic.py
+   python app_gui_basic.py    # Port 7861
+   python app_gui_mmr.py      # Port 7862
+   python app_gui_ensemble.py # Port 7863
+   python app_gui_reranker.py # Port 7864
    ```
 
-   The application will open on a specific port (e.g., `localhost:7861`).
-
----
+--- 
 
 ## 🚀 **Chains Overview**
 
@@ -115,3 +139,14 @@ During execution, you might encounter the following warnings. These are due to o
    - This is related to upcoming Gradio updates that recommend using `type='messages'`.
 
 These warnings are non-critical and do not affect the functionality of the pipelines. Updating to newer versions may introduce additional complexity not covered in this workshop.
+
+
+### Credits and References
+
+- The markdown file in the `docs/` folder was generated using [Docling](https://github.com/docling), an open-source project for processing documents.
+- This project leverages the following libraries and tools:
+  - [Gradio](https://gradio.app/) – Build simple and interactive user interfaces.
+  - [Hugging Face](https://huggingface.co/) – Embeddings, models, and cross-encoder reranking.
+  - [rank_bm25](https://github.com/dorianbrown/rank_bm25) – Keyword-based retrieval using the BM25 algorithm.
+  - [LangChain](https://www.langchain.com/) – Develop RAG pipelines and chain integrations.
+
