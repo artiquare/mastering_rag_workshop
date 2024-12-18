@@ -1,0 +1,7 @@
+langchain_community
+langchain_huggingface
+langchain_chroma
+langchain_text_splitters
+rank_bm25
+python_dotenv
+gradio
