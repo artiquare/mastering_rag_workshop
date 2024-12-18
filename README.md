@@ -141,9 +141,11 @@ During execution, you might encounter the following warnings. These are due to o
 These warnings are non-critical and do not affect the functionality of the pipelines. Updating to newer versions may introduce additional complexity not covered in this workshop.
 
 
+---
+
 ### Credits and References
 
-- The markdown file in the `docs/` folder was generated using [Docling](https://github.com/docling), an open-source project for processing documents.
+- The markdown file in the `docs/` folder was generated using [Docling]([https://github.com/DS4SD/docling]), an open-source project for processing documents.
 - This project leverages the following libraries and tools:
   - [Gradio](https://gradio.app/) – Build simple and interactive user interfaces.
   - [Hugging Face](https://huggingface.co/) – Embeddings, models, and cross-encoder reranking.
