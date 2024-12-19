@@ -1,6 +1,6 @@
 # RAG Workshop: Transformer Specification Analysis
 
-This repository contains the code and resources used in the workshop for building and refining RAG pipelines to analyze transformer specifications. The implementation demonstrates multiple retrieval and generation strategies, progressing from basic similarity search to advanced reranking.
+This repository contains the code and resources used in the [KI Park workshop](https://youtu.be/T5YPpQVuuGE?feature=shared&t=1943) for building and refining RAG pipelines to analyze transformer specifications. The implementation demonstrates multiple retrieval and generation strategies, progressing from basic similarity search to advanced reranking.
 
 ---
 
