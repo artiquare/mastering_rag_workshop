@@ -72,6 +72,8 @@ This repository contains the code and resources used in the workshop for buildin
 
 ## 🚀 **Chains Overview**
 
+![alt text](https://github.com/artiquare/mastering_rag_workshop/blob/add-diagram/docs/qa_chain_flowchart.webp?raw=true)
+
 1. **Basic Chain**:
    - Implements simple similarity search-based retrieval.
    - Found in `rag_app/chains/basic_qa_chain.py`.
